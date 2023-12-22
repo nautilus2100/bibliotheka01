@@ -26,7 +26,8 @@ class ItemCard extends StatelessWidget {
               width: 140.0,
               child: Image.asset(model.image[0]),
             ),
-            Flexible( //Container
+            Flexible(
+              //Container
               //width: 180.0,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,7 +42,7 @@ class ItemCard extends StatelessWidget {
                     maxLines: 3,
                     style: itemCardDes,
                   ),
-                  SpaceVH(height: 20.0),
+                  SpaceVH(height: 10.0),
                   Text(
                     model.price,
                     style: itemCardPrice,

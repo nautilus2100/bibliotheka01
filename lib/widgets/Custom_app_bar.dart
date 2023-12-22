@@ -14,9 +14,11 @@ class CustomAppBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(Icons.menu),
+          //Icon(Icons.menu),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              print("boton verde de menu");
+            },
             splashColor: white,
             child: Container(
               height: 65.0,
@@ -31,7 +33,7 @@ class CustomAppBar extends StatelessWidget {
                 ),
               ),
               child: Icon(
-                Icons.shopping_cart_outlined,
+                Icons.menu,
                 color: white,
               ),
             ),

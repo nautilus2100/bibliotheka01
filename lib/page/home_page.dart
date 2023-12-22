@@ -46,52 +46,52 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        elevation: 0.0,
-        child: Container(
-          height: 100.0,
-          color: green,
-          child: Stack(
-            children: [
-              Align(
-                alignment: Alignment.topCenter,
-                child: Container(
-                  height: 40.0,
-                  decoration: BoxDecoration(
-                    color: white,
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(50.0),
-                      bottomRight: Radius.circular(50.0),
-                    ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: Alignment.bottomCenter,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    bottomNavButton(
-                      onPress: () {},
-                      icon: Icons.home_outlined,
-                    ),
-                    SpaceVH(width: 60),
-                    bottomNavButton(
-                      onPress: () {},
-                      icon: Icons.chat_outlined,
-                    ),
-                    SpaceVH(width: 60),
-                    bottomNavButton(
-                      onPress: () {},
-                      icon: Icons.person_outline_outlined,
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
+      // bottomNavigationBar: BottomAppBar(
+      //   elevation: 0.0,
+      //   child: Container(
+      //     height: 50.0,
+      //     color: black,
+      //     child: Stack(
+      //       children: [
+      //         Align(
+      //           alignment: Alignment.topCenter,
+      //           child: Container(
+      //             height: 40.0,
+      //             decoration: BoxDecoration(
+      //               color: white,
+      //               borderRadius: BorderRadius.only(
+      //                 bottomLeft: Radius.circular(0.0),
+      //                 bottomRight: Radius.circular(0.0),
+      //               ),
+      //             ),
+      //           ),
+      //         ),
+      //         // Align(
+      //         //   alignment: Alignment.bottomCenter,
+      //         //   child: Row(
+      //         //     mainAxisAlignment: MainAxisAlignment.center,
+      //         //     children: [
+      //         //       bottomNavButton(
+      //         //         onPress: () {},
+      //         //         icon: Icons.home_outlined,
+      //         //       ),
+      //         //       SpaceVH(width: 60),
+      //         //       bottomNavButton(
+      //         //         onPress: () {},
+      //         //         icon: Icons.chat_outlined,
+      //         //       ),
+      //         //       SpaceVH(width: 60),
+      //         //       bottomNavButton(
+      //         //         onPress: () {},
+      //         //         icon: Icons.person_outline_outlined,
+      //         //       ),
+      //         //     ],
+      //         //   ),
+      //         // ),
+      //       ],
+      //     ),
+      //   ),
+      // ),
     );
   }
 

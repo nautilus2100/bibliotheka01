@@ -17,12 +17,15 @@ class _TabBarButtonState extends State<TabBarButton> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        for (int i = 0; i < tabBarMenu.length; i++)
+        for (int i = 0;
+            i < tabBarMenu.length;
+            i++) // creacion de menu all chairs lamps tables
           InkWell(
             splashColor: Colors.transparent,
             onTap: () {
               setState(() {
                 id = tabBarMenu[i].id;
+                print("holaaaaaaaaaaaaaaaaaaa");
               });
             },
             child: Container(
