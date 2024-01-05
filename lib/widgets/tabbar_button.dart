@@ -7,6 +7,7 @@ class TabBarButton extends StatefulWidget {
   const TabBarButton({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _TabBarButtonState createState() => _TabBarButtonState();
 }
 
@@ -25,12 +26,12 @@ class _TabBarButtonState extends State<TabBarButton> {
             onTap: () {
               setState(() {
                 id = tabBarMenu[i].id;
-                print("holaaaaaaaaaaaaaaaaaaa");
+                //print("holaaaaaaaaaaaaaaaaaaa");
               });
             },
             child: Container(
               height: 40.0,
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
               decoration: BoxDecoration(
                 color: id == i ? gray : Colors.transparent,
                 borderRadius: BorderRadius.circular(50.0),

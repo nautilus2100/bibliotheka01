@@ -1,19 +1,20 @@
-import 'package:bibliotheka/page/NavBar.dart';
+
 import 'package:flutter/material.dart';
 import 'package:bibliotheka/core/color.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({Key? key}) : super(key: key);
+// ignore: camel_case_types
+class customAppBar extends StatelessWidget {
+  const customAppBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       color: black,
-      margin: EdgeInsets.only(top: 50.0),
+      margin: const EdgeInsets.only(top: 50.0),
       height: 80.0,
       child: Scaffold(
         appBar: AppBar(),
-        drawer: Drawer(),
+        drawer: const Drawer(),
       ),
 
       // child: Row(

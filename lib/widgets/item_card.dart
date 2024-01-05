@@ -17,12 +17,12 @@ class ItemCard extends StatelessWidget {
       },
       child: Container(
         height: 140.0,
-        margin: EdgeInsets.only(bottom: 30.0),
+        margin: const EdgeInsets.only(bottom: 30.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
+            SizedBox(
               width: 140.0,
               child: Image.asset(model.image[0]),
             ),
@@ -36,13 +36,13 @@ class ItemCard extends StatelessWidget {
                     model.name,
                     style: itemCardHeading,
                   ),
-                  SpaceVH(height: 10.0),
+                  const SpaceVH(height: 10.0),
                   Text(
                     model.description,
                     maxLines: 3,
                     style: itemCardDes,
                   ),
-                  SpaceVH(height: 10.0),
+                  const SpaceVH(height: 10.0),
                   Text(
                     model.price,
                     style: itemCardPrice,
@@ -53,7 +53,7 @@ class ItemCard extends StatelessWidget {
             IconButton(
               onPressed: () {},
               splashColor: Colors.transparent,
-              icon: Icon(
+              icon: const Icon(
                 Icons.favorite_border_outlined,
               ),
             ),

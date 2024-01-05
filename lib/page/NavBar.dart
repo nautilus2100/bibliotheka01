@@ -1,8 +1,12 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
-class NavBar extends StatelessWidget {
+// ignore: camel_case_types
+class navbar extends StatelessWidget {
+  const navbar({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

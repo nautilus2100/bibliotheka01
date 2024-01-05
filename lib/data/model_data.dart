@@ -24,7 +24,7 @@ List<Model> models = [
     price: '\$250.00',
     description:
         """Amazing stylish in multiple colors choice we have for Most selling item of this year. we have easy return product Options at our all stores in UAE.""",
-    category: 'Sofa',
+    category: 'Closet',
   ),
   Model(
     name: 'Wooden Chair',
